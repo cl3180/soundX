@@ -1,25 +1,676 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="xc6-Za-a1S">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Animals-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
+                <viewController title="Animals" id="BYZ-38-t0r" customClass="ViewController" customModule="SoundX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue" id="0Sl-Bk-YOd">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="799"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pfa-om-hek">
+                                <rect key="frame" x="148" y="340" width="94" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="19"/>
+                                <state key="normal" title="Pig">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PigButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bds-wi-MFh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="t7h-RP-YFX">
+                                <rect key="frame" x="257" y="338" width="96" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="16"/>
+                                <state key="normal" title="Squirrel">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SquirrelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CJB-Om-8Lt"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Animals" id="8Be-hR-0Uz">
+                                <rect key="frame" x="40" y="208" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OcU-hI-fy4">
+                                <rect key="frame" x="58" y="226" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="19"/>
+                                <state key="normal" title="Cat">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MeowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qs4-C6-xnz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Animals" id="CMi-B9-GCa">
+                                <rect key="frame" x="154" y="208" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GsI-qS-eqr">
+                                <rect key="frame" x="172" y="226" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="19"/>
+                                <state key="normal" title="Dog">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="WoofButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BGr-OQ-uFa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Animals" id="yvG-qa-xcj">
+                                <rect key="frame" x="264" y="208" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4LD-lC-Huz">
+                                <rect key="frame" x="257" y="214" width="97" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="19"/>
+                                <state key="normal" title="Cow">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="MooButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8sL-QX-8Nw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Animals" id="NJH-fk-PQb">
+                                <rect key="frame" x="40" y="324" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZgF-fl-UyV">
+                                <rect key="frame" x="53" y="340" width="57" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="17"/>
+                                <state key="normal" title="Chicken">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ChickenButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dmO-ab-aQg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Animals" id="v1h-XJ-hhd">
+                                <rect key="frame" x="154" y="324" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Animals" id="9L9-MX-89e">
+                                <rect key="frame" x="264" y="324" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Animals" id="cdi-ev-2HE">
+                                <rect key="frame" x="40" y="440" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Animals" id="2zG-zX-Rys">
+                                <rect key="frame" x="154" y="440" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Animals" id="Bdc-xE-mfM">
+                                <rect key="frame" x="264" y="440" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BNb-Uh-Jzb">
+                                <rect key="frame" x="279" y="459" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Gremlin">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gremlinButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="azz-bh-VaB"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="realLOGO" id="mMl-aO-ERF">
+                                <rect key="frame" x="124" y="28" width="168" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cat" id="bUJ-kv-vLb">
+                                <rect key="frame" x="148" y="119" width="55" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grass" id="iWC-iB-CBF">
+                                <rect key="frame" x="0.0" y="551" width="413" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JDZ-ff-Sdg">
+                                <rect key="frame" x="172" y="459" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Cricket">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cricketButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sVV-Vb-mLe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Psd-Vl-gSJ">
+                                <rect key="frame" x="53" y="443" width="60" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Wolf">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="wolfWhistle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FdX-3H-6Iv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="oY9-IB-FC5" appends="YES" id="RTS-wj-OiX"/>
+                        </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Animals" id="2OG-YK-0mh">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="catButton" destination="OcU-hI-fy4" id="ce7-zT-Uld"/>
+                        <outlet property="catImage" destination="8Be-hR-0Uz" id="64l-qS-Mqu"/>
+                        <outlet property="chickenButton" destination="ZgF-fl-UyV" id="IVx-hT-bzj"/>
+                        <outlet property="chickenImage" destination="NJH-fk-PQb" id="5vi-Nt-6iW"/>
+                        <outlet property="cowButton" destination="4LD-lC-Huz" id="sf7-GM-Y7k"/>
+                        <outlet property="cowImage" destination="yvG-qa-xcj" id="TDu-Kp-qCh"/>
+                        <outlet property="cricketButton" destination="JDZ-ff-Sdg" id="oBY-Yg-CDi"/>
+                        <outlet property="cricketImage" destination="2zG-zX-Rys" id="28l-bd-gP3"/>
+                        <outlet property="dogButton" destination="GsI-qS-eqr" id="H5y-uy-HAQ"/>
+                        <outlet property="dogImage" destination="CMi-B9-GCa" id="pAW-Ce-jt9"/>
+                        <outlet property="figureView" destination="bUJ-kv-vLb" id="89y-Ss-EvA"/>
+                        <outlet property="grassImage" destination="iWC-iB-CBF" id="D5J-qo-rIn"/>
+                        <outlet property="gremlinButton" destination="BNb-Uh-Jzb" id="RJd-VV-s6c"/>
+                        <outlet property="gremlinImage" destination="Bdc-xE-mfM" id="ypp-jj-vqL"/>
+                        <outlet property="logoView" destination="mMl-aO-ERF" id="4Rg-0F-Cy6"/>
+                        <outlet property="pigButton" destination="Pfa-om-hek" id="jqs-fs-Gis"/>
+                        <outlet property="pigImage" destination="v1h-XJ-hhd" id="OMM-x6-MmK"/>
+                        <outlet property="squirrelButton" destination="t7h-RP-YFX" id="ix1-bZ-oYT"/>
+                        <outlet property="squirrelImage" destination="9L9-MX-89e" id="6CL-DU-kf3"/>
+                        <outlet property="wolfButton" destination="Psd-Vl-gSJ" id="KZB-rm-GM8"/>
+                        <outlet property="wolfImage" destination="cdi-ev-2HE" id="0Ah-bL-jtj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="oY9-IB-FC5"/>
             </objects>
+            <point key="canvasLocation" x="-153.06666666666666" y="-512.14666666666665"/>
+        </scene>
+        <!--Nice-->
+        <scene sceneID="bke-HN-tt3">
+            <objects>
+                <viewController title="Nice" id="bxU-hL-nW0" customClass="ViewController3" customModule="SoundX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="94I-k2-DCu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue" id="t6g-GF-Znp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="799"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" id="syH-KT-ltx">
+                                <rect key="frame" x="-261" y="-103" width="709" height="692"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title=" O Snap">
+                                    <color key="titleColor" red="0.0" green="0.16190191478017732" blue="0.90514520202020199" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ohSnapButton:" destination="bxU-hL-nW0" eventType="touchUpInside" id="5oC-ls-vMO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ul4-5b-z2C">
+                                <rect key="frame" x="155" y="215" width="88" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="17"/>
+                                <state key="normal" title=" Whoo!">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="whoohooButton:" destination="bxU-hL-nW0" eventType="touchUpInside" id="KSY-Fs-30S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oCn-Tk-Hwc">
+                                <rect key="frame" x="31" y="341" width="115" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="17"/>
+                                <state key="normal" title=" Clap">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="applauseButton:" destination="bxU-hL-nW0" eventType="touchUpInside" id="68n-nR-tyD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="92H-3h-MTv">
+                                <rect key="frame" x="52" y="463" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="16"/>
+                                <state key="normal" title=" Yeehaw">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yeehawButton:" destination="bxU-hL-nW0" eventType="touchUpInside" id="6FV-l5-rBX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="realLOGO" id="79Z-02-aIK">
+                                <rect key="frame" x="124" y="28" width="168" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="realAngel" id="hnr-S7-JqQ">
+                                <rect key="frame" x="155" y="117" width="66" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aCO-jb-yKO">
+                                <rect key="frame" x="264" y="464" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title=" Horn">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Horn:" destination="bxU-hL-nW0" eventType="touchUpInside" id="ZT8-Mg-YyH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Jdi-g9-62y">
+                                <rect key="frame" x="155" y="464" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title=" Fleek">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onFleekButton:" destination="bxU-hL-nW0" eventType="touchUpInside" id="88M-uN-5pm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xbu-Zu-mAq">
+                                <rect key="frame" x="178" y="345" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title=" Laugh">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="YasButton:" destination="bxU-hL-nW0" eventType="touchUpInside" id="83J-gw-Z44"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nice" id="sxn-Gt-PJz">
+                                <rect key="frame" x="264" y="206" width="93" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nice" id="3wj-hT-VIc">
+                                <rect key="frame" x="42" y="323" width="93" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nice" id="dM7-eJ-TBm">
+                                <rect key="frame" x="154" y="324" width="93" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nice" id="b1Y-hj-JeZ">
+                                <rect key="frame" x="260" y="327" width="93" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nice" id="j4r-qu-oN2">
+                                <rect key="frame" x="150" y="440" width="93" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grass" id="Da0-bg-S01">
+                                <rect key="frame" x="0.0" y="494" width="413" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nice" id="ppL-W8-2XH">
+                                <rect key="frame" x="260" y="440" width="93" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nice" id="ufk-Oi-QNB">
+                                <rect key="frame" x="153" y="212" width="93" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rmg-KC-cFb">
+                                <rect key="frame" x="278" y="212" width="88" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="17"/>
+                                <state key="normal" title=" $$$">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cheeringButton:" destination="bxU-hL-nW0" eventType="touchUpInside" id="OPq-Qn-cDS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Zi-fY-fIj">
+                                <rect key="frame" x="256" y="342" width="89" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="17"/>
+                                <state key="normal" title=" Do It!">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="youcandoitButton:" destination="bxU-hL-nW0" eventType="touchUpInside" id="UTa-03-5cK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nice" id="nJ0-A0-UO0">
+                                <rect key="frame" x="41" y="441" width="93" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nice" id="DnF-lT-CsO">
+                                <rect key="frame" x="42" y="212" width="93" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Nice" id="bFw-Cm-mMS">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="chaChinaButton" destination="Rmg-KC-cFb" id="88z-qZ-nrU"/>
+                        <outlet property="chaChingImage" destination="sxn-Gt-PJz" id="bY0-f4-rId"/>
+                        <outlet property="clappingButton" destination="oCn-Tk-Hwc" id="dsz-dZ-PAX"/>
+                        <outlet property="clappingImage" destination="3wj-hT-VIc" id="Svy-Gl-VDK"/>
+                        <outlet property="doitButton" destination="8Zi-fY-fIj" id="qE0-ma-NFj"/>
+                        <outlet property="doitImage" destination="b1Y-hj-JeZ" id="Oh4-cr-x7f"/>
+                        <outlet property="figureView" destination="79Z-02-aIK" id="Pa7-sc-g4V"/>
+                        <outlet property="grassImage" destination="Da0-bg-S01" id="2yi-ur-Y9k"/>
+                        <outlet property="hornButton" destination="aCO-jb-yKO" id="pVp-5C-3pM"/>
+                        <outlet property="hornImage" destination="ppL-W8-2XH" id="pYb-4F-L4M"/>
+                        <outlet property="laughButton" destination="Xbu-Zu-mAq" id="gsS-nQ-Clr"/>
+                        <outlet property="laughImage" destination="dM7-eJ-TBm" id="GT2-hN-uRr"/>
+                        <outlet property="logoView" destination="hnr-S7-JqQ" id="0qU-SB-8JV"/>
+                        <outlet property="onfleekButton" destination="Jdi-g9-62y" id="fxf-wF-cFi"/>
+                        <outlet property="onfleekImage" destination="j4r-qu-oN2" id="575-d1-9Ty"/>
+                        <outlet property="snap" destination="syH-KT-ltx" id="8a5-4Q-LEo"/>
+                        <outlet property="snapButton" destination="DnF-lT-CsO" id="D0M-Rh-0De"/>
+                        <outlet property="whooButtonReal" destination="ul4-5b-z2C" id="5Z6-pG-Qxo"/>
+                        <outlet property="whooImage" destination="ufk-Oi-QNB" id="l11-zH-dcL"/>
+                        <outlet property="yeehawButton" destination="92H-3h-MTv" id="6xB-sR-fcl"/>
+                        <outlet property="yeehawImage" destination="nJ0-A0-UO0" id="DRA-KQ-0HW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gL5-Fd-IZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-170" y="1056"/>
+        </scene>
+        <!--Naughty-->
+        <scene sceneID="Ljd-wu-HCf">
+            <objects>
+                <viewController storyboardIdentifier="Naughty" title="Naughty" id="lsq-ao-l6y" customClass="ViewController2" customModule="SoundX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hQV-ZI-dos">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue" id="JcQ-eR-Q91">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="799"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nvt-ji-V7S">
+                                <rect key="frame" x="24" y="225" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="17"/>
+                                <state key="normal" title="Boom">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ExploButton:" destination="lsq-ao-l6y" eventType="touchUpInside" id="0u5-Ra-7KI"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Naughty" id="G51-TA-Hf5">
+                                <rect key="frame" x="151" y="207" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Naughty" id="Tb7-uS-5LH">
+                                <rect key="frame" x="261" y="207" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZOH-Kc-gtH">
+                                <rect key="frame" x="168" y="207" width="48" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="18"/>
+                                <state key="normal" title="Boo">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BooButton:" destination="lsq-ao-l6y" eventType="touchUpInside" id="nT9-FS-hcd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Naughty" id="v1Y-Ye-aRP">
+                                <rect key="frame" x="37" y="323" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Wk-h2-afn">
+                                <rect key="frame" x="55" y="342" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="16"/>
+                                <state key="normal" title="Static">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="staticButton:" destination="lsq-ao-l6y" eventType="touchUpInside" id="GeD-Hd-6YC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Naughty" id="jgb-6x-04C">
+                                <rect key="frame" x="151" y="323" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RtX-2O-5L7">
+                                <rect key="frame" x="162" y="337" width="61" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="16"/>
+                                <state key="normal" title="Drama">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="DramaticButton:" destination="lsq-ao-l6y" eventType="touchUpInside" id="0JR-Xr-ebY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6AZ-m3-XS2">
+                                <rect key="frame" x="254" y="212" width="96" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Medium" family="Kohinoor Devanagari" pointSize="16"/>
+                                <state key="normal" title="Snore">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SnoringButton:" destination="lsq-ao-l6y" eventType="touchUpInside" id="Dwf-Bf-vQS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Naughty" id="KWX-sv-OrM">
+                                <rect key="frame" x="261" y="323" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Naughty" id="ETb-32-e8a">
+                                <rect key="frame" x="37" y="439" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Naughty" id="bxd-qH-aab">
+                                <rect key="frame" x="261" y="439" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Naughty" id="W6m-Gt-uaQ">
+                                <rect key="frame" x="151" y="439" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="realLOGO" id="NMb-vO-nCa">
+                                <rect key="frame" x="124" y="28" width="168" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grass" id="k3t-V5-pFy">
+                                <rect key="frame" x="0.0" y="466" width="413" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="realdevil2" id="nbs-AD-WvE">
+                                <rect key="frame" x="148" y="118" width="77" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vol-YI-BIu">
+                                <rect key="frame" x="279" y="454" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Stink">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stinkButton:" destination="lsq-ao-l6y" eventType="touchUpInside" id="MIK-hI-eow"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nnp-ze-d2M">
+                                <rect key="frame" x="55" y="454" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Smelly">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="smellyButton:" destination="lsq-ao-l6y" eventType="touchUpInside" id="SeL-7m-U3V"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Naughty" id="Dfn-UA-mNa">
+                                <rect key="frame" x="37" y="207" width="83" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2OF-yR-zoP">
+                                <rect key="frame" x="138" y="455" width="109" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Butt">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttButton:" destination="lsq-ao-l6y" eventType="touchUpInside" id="BdR-If-Akz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SMj-C1-KHY">
+                                <rect key="frame" x="279" y="337" width="46" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Evil">
+                                    <color key="titleColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="laughButton:" destination="lsq-ao-l6y" eventType="touchUpInside" id="Eso-xQ-ClV"/>
+                                    <action selector="laughrealButton:" destination="lsq-ao-l6y" eventType="touchUpInside" id="ctK-7L-IOe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Naughty" id="6sz-mH-E2a">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="booButton" destination="ZOH-Kc-gtH" id="dwH-Xv-7rH"/>
+                        <outlet property="booImage" destination="G51-TA-Hf5" id="Kkb-WO-2lo"/>
+                        <outlet property="boomButton" destination="Nvt-ji-V7S" id="OgI-qy-tVI"/>
+                        <outlet property="buttButton" destination="2OF-yR-zoP" id="cmL-wS-rLI"/>
+                        <outlet property="buttTubaImage" destination="W6m-Gt-uaQ" id="Hzl-Gd-lPl"/>
+                        <outlet property="dramaButton" destination="RtX-2O-5L7" id="7Zr-B5-lQD"/>
+                        <outlet property="dramaImage" destination="jgb-6x-04C" id="FW4-Bc-oES"/>
+                        <outlet property="expButton" destination="Nvt-ji-V7S" id="J9n-VB-Cq5"/>
+                        <outlet property="figureView" destination="nbs-AD-WvE" id="V8B-jE-Etr"/>
+                        <outlet property="grassImage" destination="k3t-V5-pFy" id="Sa9-QR-Pd4"/>
+                        <outlet property="laughImage" destination="KWX-sv-OrM" id="rut-Ke-RaQ"/>
+                        <outlet property="laughrealButton" destination="SMj-C1-KHY" id="lAT-1y-2vW"/>
+                        <outlet property="logoView" destination="NMb-vO-nCa" id="gPu-1Q-r0p"/>
+                        <outlet property="smellyButton" destination="nnp-ze-d2M" id="zW1-o2-Mgf"/>
+                        <outlet property="smellyFartImage" destination="ETb-32-e8a" id="heR-25-qYx"/>
+                        <outlet property="snoreButton" destination="6AZ-m3-XS2" id="g4k-co-E1E"/>
+                        <outlet property="snoreImage" destination="Tb7-uS-5LH" id="PZV-xb-GF6"/>
+                        <outlet property="sonicImage" destination="Dfn-UA-mNa" id="DcW-Bm-Qe6"/>
+                        <outlet property="staticButton" destination="5Wk-h2-afn" id="9qQ-aa-ooF"/>
+                        <outlet property="staticImage" destination="v1Y-Ye-aRP" id="neU-Lg-TGJ"/>
+                        <outlet property="stinkButton" destination="vol-YI-BIu" id="w4A-jT-qNU"/>
+                        <outlet property="stinkbombImage" destination="bxd-qH-aab" id="dlm-vk-8LV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6a-ca-hoG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178" y="248"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="h5R-Jc-p5G">
+            <objects>
+                <tabBarController id="xc6-Za-a1S" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="pg2-tk-H36">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                        <color key="tintColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.67295868819760174" green="0.95900410353535359" blue="0.59813803237607743" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lsq-ao-l6y" kind="relationship" relationship="viewControllers" id="4WE-OL-Vpx"/>
+                        <segue destination="bxU-hL-nW0" kind="relationship" relationship="viewControllers" id="6S5-NI-57f"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="R4y-JJ-2bk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0K0-AD-vcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-614.93333333333328" y="528.24000000000001"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5zi-IR-b76">
+            <objects>
+                <navigationController id="0yi-z0-vb8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="je6-61-5XR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5qS-fa-WnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-895.4666666666667" y="-327.54666666666668"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Animals" width="1350" height="1368"/>
+        <image name="Cat" width="638" height="692"/>
+        <image name="Naughty" width="1496" height="1346"/>
+        <image name="Nice" width="300" height="226"/>
+        <image name="blue" width="285" height="400"/>
+        <image name="grass" width="800" height="140"/>
+        <image name="realAngel" width="551" height="607"/>
+        <image name="realLOGO" width="1500" height="947"/>
+        <image name="realdevil2" width="555" height="599"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <color key="tintColor" red="0.0" green="0.16190191479999999" blue="0.90514520200000004" alpha="1" colorSpace="calibratedRGB"/>
 </document>
